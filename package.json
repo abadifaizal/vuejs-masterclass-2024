@@ -15,9 +15,10 @@
     "supabase:login": "supabase login",
     "supabase:logout": "supabase logout",
     "supabase:link": "supabase link --project-ref elucpbkqmnglandnscvn",
-    "db:migrate:new": "supabase migration new projects-schema",
+    "db:migrate:new": "supabase migration new",
     "db:reset": "supabase db reset --linked",
-    "db:seed": "node --env-file=.env database/seed.js"
+    "db:seed": "node --env-file=.env database/seed.js",
+    "supabase:types": "npx supabase gen types typescript --project-id elucpbkqmnglandnscvn --schema public > database/types.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.43.4",
